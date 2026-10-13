@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf6">
+  <meta name="description" content="Daftarkan anak ke kelas coding seru KODI Kids Coding Club.">
+  <title>Pendaftaran — KODI Kids Coding Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form-page">
+  <a class="skip-link" href="#konten">Lewati ke konten</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="KODI Kids Coding Club, beranda"><span class="wordmark-icon" aria-hidden="true"><span>&lt;</span><b>/</b><span>&gt;</span></span><span>KODI KIDS<small>CODING CLUB / 2026</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span class="sr-only">Buka navigasi</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+      <a class="nav-link" href="index.html">Kegiatan <span>01</span></a>
+      <a class="nav-link active" href="pendaftaran.html" aria-current="page">Pendaftaran <span>02</span></a>
+      <a class="nav-cta" href="index.html#kegiatan">Lihat kegiatan <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="konten" class="registration-layout">
+    <aside class="form-aside"><p class="eyebrow"><span class="status-dot"></span> KODI KIDS / PENDAFTARAN</p><h1>Siap<br>jadi <span>kreator?</span></h1><p class="aside-copy">Isi bersama orang tua atau wali. Tidak perlu pengalaman coding—cukup bawa rasa ingin tahu!</p><div class="aside-art" aria-hidden="true"><span class="code-chip chip-html">&lt;/&gt;</span><span class="code-chip chip-js">JS</span><span class="code-chip chip-py">Py</span><span class="art-star">✳</span><span class="art-note">PLAY<br>LEARN<br>CREATE</span></div><a class="back-link" href="index.html">← Lihat kelas seru</a><span class="aside-index">FORMULIR / 02—02</span></aside>
+    <section class="form-content" aria-labelledby="form-title">
+      <div class="form-heading"><p class="eyebrow">LANGKAH 01 / DATA PESERTA</p><h2 id="form-title">Daftar kelas coding</h2><p>Mohon isi bersama orang tua atau wali. Kolom bertanda <span aria-hidden="true">*</span> wajib diisi.</p></div>
+      <form id="registration-form" novalidate>
+        <fieldset class="form-fieldset"><legend><span>01</span> Tentang kamu</legend>
+          <div class="field"><label for="nik">NIK <span aria-hidden="true">*</span></label><input id="nik" name="nik" type="text" inputmode="numeric" autocomplete="off" maxlength="16" pattern="[0-9]{16}" aria-describedby="nik-hint nik-error" required><small class="field-hint" id="nik-hint">16 digit angka. Gunakan data contoh saat mencoba formulir.</small><small class="field-error" id="nik-error"></small></div>
+          <div class="field"><label for="nama">Nama lengkap <span aria-hidden="true">*</span></label><input id="nama" name="nama" type="text" autocomplete="name" maxlength="100" aria-describedby="nama-error" required><small class="field-error" id="nama-error"></small></div>
+          <fieldset class="choice-field"><legend>Jenis kelamin <span aria-hidden="true">*</span></legend><div class="radio-row"><label class="choice"><input type="radio" name="gender" value="Laki-laki" required><span>Laki-laki</span></label><label class="choice"><input type="radio" name="gender" value="Perempuan" required><span>Perempuan</span></label></div><small class="field-error" id="gender-error"></small></fieldset>
+          <div class="field"><label for="telepon">Nomor HP <span aria-hidden="true">*</span></label><input id="telepon" name="telepon" type="tel" inputmode="tel" autocomplete="tel" maxlength="15" aria-describedby="telepon-hint telepon-error" required><small class="field-hint" id="telepon-hint">Masukkan 10–15 digit; awalan +62 atau 0 diperbolehkan.</small><small class="field-error" id="telepon-error"></small></div>
+          <div class="field"><label for="alamat">Alamat <span aria-hidden="true">*</span></label><textarea id="alamat" name="alamat" rows="3" autocomplete="street-address" maxlength="300" aria-describedby="alamat-error" required></textarea><small class="field-error" id="alamat-error"></small></div>
+        </fieldset>
+        <fieldset class="form-fieldset language-fieldset"><legend><span>02</span> Yang ingin dipelajari</legend><p class="fieldset-hint">Pilih satu atau lebih bahasa pemrograman.</p><div class="language-options">
+          <label class="language-choice lang-html"><input type="checkbox" name="bahasa" value="HTML & CSS"><span class="language-icon">&lt;/&gt;</span><span>HTML &amp; CSS</span></label>
+          <label class="language-choice lang-js"><input type="checkbox" name="bahasa" value="JavaScript"><span class="language-icon">JS</span><span>JavaScript</span></label>
+          <label class="language-choice lang-py"><input type="checkbox" name="bahasa" value="Python"><span class="language-icon">Py</span><span>Python</span></label>
+          <label class="language-choice lang-java"><input type="checkbox" name="bahasa" value="Java"><span class="language-icon">Ja</span><span>Java</span></label>
+        </div><small class="field-error" id="bahasa-error"></small></fieldset>
+        <div class="form-actions"><button class="button button-dark submit-button" type="submit">Periksa pendaftaran <span aria-hidden="true">↗</span></button><p>Isian hanya ditampilkan untuk pemeriksaan di halaman ini.</p></div>
+      </form>
+
+      <section class="confirmation-panel" id="confirmation-panel" hidden aria-labelledby="confirmation-title" tabindex="-1"><div class="panel-kicker"><span>LANGKAH TERAKHIR</span><span>02 / 02</span></div><div class="confirmation-mark" aria-hidden="true">?</div><h2 id="confirmation-title">Apakah Anda sudah yakin untuk menyimpan?</h2><p>Periksa lagi isianmu sebelum menampilkan ringkasan pendaftaran.</p><div class="confirmation-actions"><button class="button button-dark" id="confirm-yes" type="button">Ya, lanjutkan <span aria-hidden="true">↗</span></button><button class="button button-light" id="confirm-no" type="button">Tidak, saya ingin mengedit</button></div></section>
+
+      <section class="summary-panel" id="summary-panel" hidden aria-labelledby="summary-title" tabindex="-1"><div class="panel-kicker"><span>KODI KIDS / RINGKASAN</span><span>TERKONFIRMASI</span></div><div class="summary-mark" aria-hidden="true">✓</div><h2 id="summary-title">Sampai jumpa<br>di kelas coding!</h2><p class="summary-intro">Berikut ringkasan isian yang kamu konfirmasi.</p><dl class="summary-list" id="summary-list"></dl><p class="local-note">Ringkasan ini hanya tampil di halaman ini dan tidak disimpan ke database.</p><button class="button button-light" id="edit-again" type="button">Kembali ke formulir</button></section>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="index.html">KODI KIDS <span>CODING CLUB</span></a><p>Tempat anak belajar coding sambil berkarya.</p><span>© 2026 KODI KIDS / PLAY • LEARN • CREATE.</span></footer>
+  <script src="js/main.js" defer></script>
+  <script src="js/pendaftaran.js" defer></script>
+</body>
+</html>
